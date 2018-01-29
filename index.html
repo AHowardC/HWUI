@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+  <title>TopAndSideNav</title>
+</head>
+<body>
+
+  <header>
+    <!-- TOP NAV BAR -->
+    <nav class="top-nav">
+      <ul id="Top-nav-bar">
+        <!-- brand part of nav bar -->
+        <li id="brand">brand</li>
+        <!-- user profile section -->
+        <div class="UserProfileSection">
+          <div class="toggleMeTop" "dropdown">
+            <li><img onclick="myFunction()" class="profilePic img show" src="./assets/profile-image.jpg" alt=""></li>
+            <li><img onclick="myFunction()" class="closeMenu img" src="./assets/dropdown-close-x.svg" alt=""></li>
+          </div>
+          <div id="profileName">John Doe</div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- LEFT SIDE NAVIGATION -->
+  <div id="leftBar">
+    <!-- home button -->
+    <div class="HoverDiv">
+      <img id="home" src="./assets/home.svg" /><span id="span">home</span>
+    </div>
+    <!-- user button -->
+    <div class="HoverDiv">
+      <img id='user' src="./assets/user.svg" alt=""><span id="span">dashboard</span>
+    </div>
+    <!-- more button -->
+    <div class="HoverDiv">
+      <img id='more' src="./assets/more.svg" alt=""><span id="span">services</span>
+    </div>
+  </div>
+  <!-- toggle caret button -->
+  <div class="toggleMe">
+    <div id="toggleButtonRight" class="right toggleBtn"></div>
+    <div id="toggleButtonLeft" class="left toggleBtn"></div>
+  </div>
+  <!-- DROP DOWN MENU -->
+  <div id="myDropdown" class="dropdown-content">
+    <div id="testDrop">
+    <a id="dropDownProfile" href="#">Profile</a>
+    <a id="dropDownSettings" href="#">Settings</a>
+    <a id="dropDownLogout" href="#">Logout</a>
+  </div>
+</div>
+
+</body>
+</html>
